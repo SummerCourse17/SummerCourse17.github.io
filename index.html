@@ -1,44 +1,196 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <p>404 Error. Page not found.</p>
-  </body>
+    <head>
+        <title>@SummerCourse17</title>
+        <link rel="stylesheet" href="https://use.typekit.net/trt5knh.css">
+        <link href='index.css' type='text/css' rel='stylesheet'>
+        <style>
+            h1, h2{
+                font-family: Anton;
+            }
+            p, li{
+                font-family: myriad-pro;
+                font-weight: 400;
+                font-style: normal;
+            }
+            h3{
+                font-family: myriad-pro;
+                font-weight: bold;
+                font-style: normal;
+            }
+            header{
+                background-color: #3cb1db;
+                color: white;
+                margin-top: -10px;
+                /*margin-left: -10px;
+                margin-right: -10px;*/
+            }
+            footer{
+                background-color: #3cb1db;
+                color: white;
+                margin-bottom: -10px;
+                text-align: center;
+            }
+            header p, footer p {
+                padding: 25px;
+            }
+            #profile{
+                width:8rem;
+                height: 8rem;
+                background-image: url('me.jpeg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 0px top;
+            }
+            #scroll{
+                height: 35%;
+            }
+            main{
+                margin-left: 3rem;
+                margin-right: 3rem;
+            }
+            .flexcon{
+                display: flex;
+                width: 100%;
+            }
+            .flexitem{
+                width: 50%;
+            }
+            @media only screen and (max-width: 600px) {
+              .flexcon {
+                display: block;
+                width: 100%;
+              }
+              .flexitem{
+                  width: 100%;
+              }
+              main{
+                margin-left: 2rem;
+                margin-right: 2rem;
+              }
+            }
+            .creds{
+                display: flex;
+                width:100%;
+            }
+            .col3{
+                width:33%;
+            }
+            .col10{
+                width: 10%;
+            }
+            .col3 img, .exp_img img, .hae_img img, .col10 img{
+                width: 100%;
+            }
+            .port_img img{
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                width: 100%;
+                height: 14vw;
+                object-fit: cover;
+            }
+            .exp_item{
+                display: flex;
+                width:100%;
+                margin-bottom: 10px;
+            }
+            .exp_img{
+                width: 10%;
+                margin-right: 10px;
+            }
+            .exp_text{
+                width:90%;
+            }
+            .portfolio{
+                display: flex;
+                width: 100%;
+            }
+            .port_item, .port_item_main{
+                width:20%;
+                text-align: center;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+            .port_item_main{
+                background-color: #3cb1db;
+                color: white;
+                border: 5px solid #3cb1db;
+            }
+            .port_item_main a{
+                color: white;
+                font-weight: bold;
+            }
+            .port_item_main .port_img{
+                background-color: #3cb1db;
+            }
+            .hae{
+                display: flex;
+                width: 100%;
+            }
+            .hae_img{
+                width: 25%;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+            .hae_text{
+                width:75%;
+            }
+            @media only screen and (max-width: 800px) {
+              .portfolio{
+                  display: block;
+              }
+              .port_item, .port_item_main{
+                  width: 100%;
+                  margin-bottom: 10px;
+              }
+              .port_img img{
+                height: 45vw;
+                }
+            }
+            @media only screen and (max-width: 600px) {
+              .exp_item, .hae{
+                  display: block;
+                  margin-bottom: 30px;
+                  border-bottom: 2px solid black;
+              }
+              .exp_img, .col10{
+                  width:60%;
+                  margin-left: auto;
+                  margin-right: auto;
+              }
+              .exp_text{
+                  width:100%;
+              }
+              .creds{
+                  display: block;
+              }
+              .hae_text, .hae_img, .hae_img img{
+                  width: 100%;
+              }
+              
+            }
+        </style>
+        <script src="https://kit.fontawesome.com/247d132e05.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <p>Ben Cunningham</p>
+        </header>
+        <center>
+            <div id="intro">
+                <div id="profile" style="border-radius: 50%;"></div>
+                <h1>Ben Cunningham</h1>
+                <p>Developer & Computer Scientist</p>
+            </div>
+        </center>
+        <main>
+            <p>Hi, I'm Ben. I'm currently studying Computer Science at The University of Warwick. Most of my projects are hosted on <a href="https://bcwd.site/">https://bcwd.site</a> or GitHub <a href="https://github.com/BC-Brands">@BC-Brands</a>.</p>
+            <p>GitHub: <a href="https://github.com/SummerCourse17">https://github.com/SummerCourse17</a></p>
+            <p>Personal Website: <a href="https://bcwd.site/bencunningham/">https://bcwd.site/bencunningham/</a></p>
+        </main>
+        <footer>
+            <p>Copyright &copy; Ben Cunningham 2024. All Rights Reserved.</p>
+        </footer>
+    </body>
 </html>
-  <!--<head>
-    <title>BC Website Design</title>
-    Link to style.css
-    <link href='index.css' type='text/css' rel='stylesheet'>
-  </head>
-  <body>
-    <div class="header">
-      <h1>BC Website Design</h1>
-      <div class="links">
-        <p><a href="index.html">Home</a></p>>
-      </div>
-    </div>
-    <div class="about">
-      <h2>Create your Website</h2>
-      <img src="https://s3.amazonaws.com/codecademy-content/programs/freelance-one/broadway/images/identify.svg">
-      <h3>Look at other websites</h3>
-      <p>Look at features that you want on your website</p>
-      <img src="https://s3.amazonaws.com/codecademy-content/programs/freelance-one/broadway/images/understand.svg">
-      <h3>Decide on the design and content</h3>
-      <p>Email us with your ideas</p>
-      <img src="https://s3.amazonaws.com/codecademy-content/programs/freelance-one/broadway/images/execute.svg">
-      <h3>Execute</h3>
-      <p>We make the fabulous site for you!</p>
-    </div>
-    <div class="others">
-      <div class="contact">
-        <h3>Contact</h3>
-        <p>E-mail: Coming Soon!</p>
-      </div>
-    </div>
-    <div class="footer">
-      <p>B Website Design</p>
-      <span id="links">
-        <a href="index.html">Home</a>
-      </span>
-    </div>
-  </body>
-</html>-->
